@@ -3,9 +3,7 @@
 
 ## Project Overview
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API.
-
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+This project is inspired to create a model that predicts house prices in Boston. To acheive this, Machine Learning is employed using Microservice API which is built on Scikit-Learn.
 
 ### Project Tasks
 
@@ -51,4 +49,20 @@ source .devops/bin/activate
 -   Setup and Configure Docker locally
 -   Setup and Configure Kubernetes locally
 -   Create Flask app in Container
--   Run via kubectl
+-   Run via kubectl: `kubectl run ml-project --image=$dockerpath`
+
+FILE DIRECTORIES
+File/Directory Description
+Circleci Contains config.yml file
+Model Data Showing housing prices in the boston area
+Output_files Contains docker and kubernetes log outputs
+app.py REST endpoint in flask containing routes to fetch house prices in boston
+Dockerfile Docker creation files with dependencies
+make_predictions.sh Call to log output predictions from the REST api end point
+Makefile to install project dependcies and lint
+requirements.txt Dependencies for the ml-project
+upload_docker.sh shell script to upload locally built image to docker hub
+run_docker.sh shell script to build the docker file
+run_kuberbetes.sh shell script to run and start up docker image in kubernetes
+
+#Cheers!
