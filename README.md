@@ -53,16 +53,16 @@ source .devops/bin/activate
 
 FILE DIRECTORIES
 File/Directory Description
-Circleci Contains config.yml file
-Model Data Showing housing prices in the boston area
-Output_files Contains docker and kubernetes log outputs
-app.py REST endpoint in flask containing routes to fetch house prices in boston
-Dockerfile Docker creation files with dependencies
-make_predictions.sh Call to log output predictions from the REST api end point
-Makefile to install project dependcies and lint
-requirements.txt Dependencies for the ml-project
-upload_docker.sh shell script to upload locally built image to docker hub
-run_docker.sh shell script to build the docker file
-run_kuberbetes.sh shell script to run and start up docker image in kubernetes
+- Circleci -> Contains config.yml file
+- Model Data -> Shows house prices in the Boston
+- Output_files -> Contains docker and kubernetes log outputs
+- app.py -> REST endpoint in flask containing routes to fetch house prices in boston
+- Dockerfile -> Docker creation files with dependencies
+- make_predictions.sh -> Script to log output predictions from the REST api end point
+- Makefile -> Install project dependcies and lint
+- requirements.txt -> Dependencies for the ml-project
+- upload_docker.sh -> Shell script to upload locally built image to docker hub
+- run_docker.sh -> Shell script to build the docker file
+- run_kuberbetes.sh -> Shell script to run and start up docker image in kubernetes
 
 #Cheers!
